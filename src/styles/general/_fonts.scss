@@ -1,0 +1,51 @@
+$font-path: '../fonts/';
+
+@font-face {
+  font-family: 'ProximaNova';
+  src:url('#{$font-path}ProximaNova-Regular.woff2') format('woff2'),
+  url('#{$font-path}ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src:url('#{$font-path}ProximaNova-Semibold.woff2') format('woff2'),
+  url('#{$font-path}ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src:url('#{$font-path}ProximaNova-Semibold.woff2') format('woff2'),
+  url('#{$font-path}ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src:url('#{$font-path}ProximaNova-Bold.woff2') format('woff2'),
+  url('#{$font-path}ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src:url('#{$font-path}ProximaNova-Extrabld.woff2') format('woff2'),
+  url('#{$font-path}ProximaNova-Extrabld.woff') format('woff');
+  font-weight: 800;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src:url('#{$font-path}HelveticaNeue.woff2') format('woff2'),
+  url('#{$font-path}HelveticaNeue.woff') format('woff');
+  font-weight: normal;
+  font-style : normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src:url('#{$font-path}HelveticaNeue-Bold.woff2') format('woff2'),
+  url('#{$font-path}HelveticaNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style : normal;
+}

@@ -1,0 +1,25 @@
+
+mixin formula(text,dopClass)
+  div(class=`formula ${dopClass}`)
+    .formula__wrap
+      .formula__simb.formula--color-1|(
+      .formula__item.formula--color-2
+        .formula__num|64&nbsp;189
+        .formula__discr
+          span.formula__discr-model|Lenovo IdeaPad IP3
+          span.formula__discr-pr|за
+          span.formula__discr-price.nowrap|59&nbsp;990&nbsp;₽
+          span.formula__discr-text|+ плата за лизинг
+          span.formula__discr-price-liz.nowrap|4&nbsp;199&nbsp;₽
+      .formula__simb.formula--color-1|&nbsp; − &nbsp;
+      .formula__item.formula--color-2
+        .formula__num|17&nbsp;997
+        .formula__discr !{text.ostatok}
+      .formula__simb.formula--color-1|)&nbsp;/&nbsp;
+      .formula__item.formula--color-2
+        .formula__num|18
+        .formula__discr !{text.pay}
+      .formula__simb.formula--color-1|=&nbsp;
+      .formula__item.formula--color-3
+        .formula__num|2&nbsp;566
+        .formula__discr|Ежемесячный платеж

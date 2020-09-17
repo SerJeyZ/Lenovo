@@ -1,0 +1,24 @@
+-
+	const formulaText = {ostatok:'Остаточная стоимость:<br>не надо выплачивать при обмене на новую модель',pay:'Количество<br>платежей'}
+main.main
+	section.hero-s
+		.hero
+			.hero__inner
+				.container
+					h1.hero__title|Чтобы пользоваться, <br>не обязательно покупать
+					p.hero__discr|подпишитесь на ноутбук в один клик <br>бесплатно обменяйте его на новый через 18 месяцев
+					.hero__img
+						img(src="./img/hn.png" alt="Note")
+	section.service-s
+		.container
+			+service()
+			.formula-s.mt50
+				+title('fz25','Расчет платежа для Lenovo IdeaPad IP3')
+				+formula(formulaText,'mt50')
+			+payments()
+	section.advantages-s
+		.container
+			+advantages()
+	section.catalog-s
+		.container
+			+catalog()

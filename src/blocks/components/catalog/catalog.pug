@@ -1,0 +1,58 @@
+-
+  const formulaText2 = {ostatok:'Остаточная стоимость',pay:'Кол-во <br> платежей'}
+-
+  const cards = [{
+    img:'./img/note2.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  },
+  {
+    img:'./img/note3.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  },
+  {
+    img:'./img/note4.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  },
+  {
+    img:'./img/note5.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  },
+  {
+    img:'./img/note6.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  },
+  {
+    img:'./img/note7.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  },
+  {
+    img:'./img/note8.png',model:'IdeaPad IP3',price:'2 566 ₽ в мес.'
+  }]
+-
+  const caracter = [
+  {name:'Процессор',value:'i7 10750H'},
+  {name:'Память',value:'32 Gb'},
+  {name:'Хранение данных',value:'SSD 1Tb'},
+  {name:'Дисплей',value:'15.6" IPS/FHD'},
+  {name:'ОС',value:'Windows 10 Pro'}]
+mixin catalog()
+  .catalog
+    +title('fz45','Выберите свою модель')
+    ul.catalog__list
+      each item,i in cards
+        li.catalog__list-item
+          a.catalog__list-link(href="#")
+            .card-model
+              .card-model__img
+                img(src=`${item.img}`, alt=i)
+              .card-model__text
+                .card-model__model !{item.model}
+                .card-model__price|
+                  span.card__prace-num.nowrap !{item.price}
+          .item-product-wrap
+            .item-product
+              .item-product__formula
+                +formula(formulaText2,'formula--min')
+              .characteristics.item-product__descr
+                .characteristics__title|Основные характеристики
+                ul.characteristics__list
+                  each item in caracter
+                    li.characteristics__item
+                      span.characteristics__name !{item.name}
+                      span.characteristics__value !{item.value}
+              .catalog-btn.mt30.fz18
+                a(href="#" class="btn link-btn") Оформить

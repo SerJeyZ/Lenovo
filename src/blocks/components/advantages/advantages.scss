@@ -1,0 +1,142 @@
+.advantages {
+  padding-bottom: 5rem;
+
+  &__subtitle {
+    max-width: 1030px;
+  }
+
+  &__row {
+    display: flex;
+    @media(max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width : 50%;
+    min-height: 380px;
+    margin: 0 auto;
+    @media(max-width: 767px) {
+      width: 100%;
+    }
+    @media(max-width: 576px) {
+      min-height: auto;
+      height: 300px;
+    }
+  }
+
+  &__item-inner {
+    padding: 1rem;
+  }
+}
+
+.adventage {
+  max-width : 450px;
+  margin    : 0 auto;
+  text-align: center;
+  @media(max-width: 767px) {
+    max-width : 400px;
+  }
+  @media(max-width: 576px) {
+    max-width: 300px;
+  }
+  &--c-blue {
+    color: #3E8DDD;
+  }
+  &__title {
+    font-size: 2.5rem;
+  }
+  &__body {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    margin-top     : 2rem;
+    align-items    : center;
+    //min-height     : 280px;
+  }
+
+  &__body-wrap {
+    width  : 100%;
+    padding: 0 4.5rem;
+  }
+
+  &__body-top {
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+    padding-top   : 2rem;
+    padding-bottom: 0.5rem;
+    text-align    : center;
+    border       : 2px solid #3E8DDD;
+    width        : 100%;
+    min-height   : 240px;
+    border-radius: 10px;
+    @media(max-width: 767px) {
+      height: 205px;
+      min-height: auto;
+    }
+    @media(max-width: 576px) {
+      height: 190px;
+    }
+  }
+
+  &__body-bot {
+    position     : relative;
+    border       : 2px solid #3E8DDD;
+    width        : 100%;
+    min-height   : 30px;
+    margin-top   : 10px;
+    border-radius: 10px;
+
+    &::after {
+      position     : absolute;
+      content      : '';
+      top          : 50%;
+      right        : 15px;
+      transform    : translateY(-50%);
+      width        : 8px;
+      height       : 8px;
+      border       : 2px solid #3E8DDD;
+      border-radius: 50%;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  &__price--mt35 {
+    margin-top: 35px;
+    @media(max-width: 992px) {
+      margin-top: 45px;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+}
+
+.hr {
+  position        : relative;
+  left            : -8%;
+  width           : 116%;
+  height          : 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+
+  &::after {
+    background     : linear-gradient(to right, #3E8DDD 50%, transparent 51%);
+    background-size: 14px 4px;
+    content        : '';
+    display        : block;
+    height         : 2px;
+    position       : absolute;
+    top            : 50%;
+    transform      : translateY(-50%);
+    left           : 0;
+    right          : 0;
+    z-index        : 4;
+  }
+}

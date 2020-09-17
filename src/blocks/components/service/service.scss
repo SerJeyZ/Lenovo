@@ -1,0 +1,54 @@
+// .service {
+//   &-list {
+//     display: flex;
+//   }
+
+// }
+.service-list {
+  display: flex;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  @media(max-width: 992px) {
+    display: block;
+  }
+  &__item {
+    flex: 0 1 33.33%;
+    padding: 0 10px;
+    @media(max-width: 992px) {
+      margin-top: 3rem;
+    }
+  }
+}
+.card {
+  display: flex;
+  align-items: flex-start;
+  &__img {
+    flex: 0 0 6.5rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__title {
+    margin-top: 0.5rem;
+    font-weight: 800;
+  }
+  &__discr{
+    @media(max-width: 992px) {
+      max-width: none;
+    }
+    @media(max-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+  &__discr--w1 {
+    max-width: 174px;
+  }
+  &__discr--w2 {
+    max-width: 180px;
+  }
+  &__discr--w3 {
+    max-width: 315px;
+  }
+}
